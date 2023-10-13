@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SnapLab</title>
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/template.css">
+    <link rel="icon" href="../static/images/logo.png" type="image/jpg">
+    {%block head%}
+    
+    {%endblock%}
+</head>
+  <body>
+    <header>
+        <nav class="row">
+            <ul class="main-nav">
+                <li>
+                    <a href="{{url_for('effects')}}">EFFECTS</a>
+                </li>
+                <li>
+                    <a href="{{url_for('compress')}}">COMPRESS</a>
+                </li>
+                <li>
+                    <a href="{{url_for('edit')}}">EDIT</a>
+                </li>
+                <li>
+                    <a href="{{url_for('home')}}">HOME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+      
+      {% block content%}
+      
+      
+      {% endblock %}
+      
+    
+</body>    
+    
+</html>
